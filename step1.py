@@ -20,20 +20,20 @@ while True:
         break
     except:
         pass
-    print('[1;31mit seems that your GPU is not supported at the moment')
+    print('[1;31mit seems that your GPU is not supported at the moment')
     time.sleep(5)
 
 if (gpu=='T4'):
-  %pip install -q https://github.com/TheLastBen/fast-stable-diffusion/raw/main/precompiled/T4/xformers-0.0.13.dev0-py3-none-any.whl
+  get_ipython().run_line_magic('pip', 'install -q https://github.com/TheLastBen/fast-stable-diffusion/raw/main/precompiled/T4/xformers-0.0.13.dev0-py3-none-any.whl')
   
 elif (gpu=='P100'):
-  %pip install -q https://github.com/TheLastBen/fast-stable-diffusion/raw/main/precompiled/P100/xformers-0.0.13.dev0-py3-none-any.whl
+  get_ipython().run_line_magic('pip', 'install -q https://github.com/TheLastBen/fast-stable-diffusion/raw/main/precompiled/P100/xformers-0.0.13.dev0-py3-none-any.whl')
 
 elif (gpu=='V100'):
-  %pip install -q https://github.com/TheLastBen/fast-stable-diffusion/raw/main/precompiled/V100/xformers-0.0.13.dev0-py3-none-any.whl
+  get_ipython().run_line_magic('pip', 'install -q https://github.com/TheLastBen/fast-stable-diffusion/raw/main/precompiled/V100/xformers-0.0.13.dev0-py3-none-any.whl')
 
 elif (gpu=='A100'):
-  %pip install -q https://github.com/TheLastBen/fast-stable-diffusion/raw/main/precompiled/A100/xformers-0.0.13.dev0-py3-none-any.whl
+  get_ipython().run_line_magic('pip', 'install -q https://github.com/TheLastBen/fast-stable-diffusion/raw/main/precompiled/A100/xformers-0.0.13.dev0-py3-none-any.whl')
 
 clear_output()
-print('[1;32mDONE !')
+print('[1;32mDONE !')
