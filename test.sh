@@ -1,5 +1,7 @@
-apt update
-apt install p7zip-full p7zip-rar
+apt update -y
+apt install p7zip-full p7zip-rar -y
+mkdir /content
+cd /content
 git clone https://github.com/TheLastBen/diffusers
 pip install -q git+https://github.com/TheLastBen/diffusers
 pip install -q accelerate==0.12.0
