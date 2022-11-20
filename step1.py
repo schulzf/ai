@@ -5,6 +5,7 @@ import wget
 import time
 
 s = getoutput('nvidia-smi')
+print(s)
 if 'T4' in s:
   gpu = 'T4'
 elif 'P100' in s:
